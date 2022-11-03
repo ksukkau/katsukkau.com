@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kat Sukkau</title>
+  <link rel="stylesheet" href="portfolio.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Josefin+Slab:wght@400;600&family=Open+Sans+Condensed:wght@300;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="hamburger-menu">
+      <div class="line line-1"></div>
+      <div class="line line-2"></div>
+      <div class="line line-3"></div>
+      <span>Close</span>
+    </div>
+
+    <header class="header" id="header">
+      <div class="img-wrapper">
+        <img src="images/starry_sky_night_trees.jpg" alt="Starry night sky" />
+      </div>
+      <div class="banner">
+        <h1>Kat Sukkau</h1>
+        <p>Aspiring software developer who wants to build things that make a difference.</p>
+        <div>
+          <div class="socialmedia2">
+
+            <a href="https://github.com/ksukkau"><i class="fab fa-github"></i></a>
+            <a href="https://ca.linkedin.com/in/kat-sukkau-8bb587193"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:katsukkau@gmail.com?subject=Message from your website"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="sidebar">
+      <ul class="menu">
+        <li class="menu-item">
+          <a href="#header" class="menu-link" data-content="Home">Home</a>
+        </li>
+        <li class="menu-item">
+          <a href="#aboutme" class="menu-link" data-content="About Me">About Me</a>
+        </li>
+        <li class="menu-item">
+          <a href="#projects" class="menu-link" data-content="Projects">Projects</a>
+        </li>
+        <li class="menu-item">
+          <a href="#resume" class="menu-link" data-content="Resum&eacute;">Resum&eacute;</a>
+        </li>
+
+      </ul>
+      <div class="socialmedia">
+
+        <a href="https://github.com/ksukkau"><i class="fab fa-github"></i></a>
+        <a href="https://ca.linkedin.com/in/kat-sukkau-8bb587193"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:katsukkau@gmail.com?subject=Message from your website"><i class="fas fa-envelope"></i></a>
+      </div>
+    </section>
+
+    <section class="aboutme" id="aboutme">
+      <div class="section-header">
+        <h1 class="sectionheading">About Me</h1>
+        <div class="underline"></div>
+      </div>
+
+      <div class="aboutmecontent">
+
+        <div class="slideshow-container">
+
+          <div class="mySlides fade">
+            <img src="images/MeCai.jpg" />
+          </div>
+
+          <div class="mySlides fade">
+            <img src="images/smileRight.jpg" />
+          </div>
+
+          <div class="mySlides fade">
+            <img src="images/beach.jpg" />
+          </div>
+
+
+
+        </div>
+        <div style="text-align:center">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+
+
+
+        <div class="aboutmetext">
+          <p>I am currently a student at BCIT in Computer Systems Technology. I love learning and am always working on
+            learning something new. I come from a telecommunications technical and customer support background. From
+            that, I gained the skills to investigate and resolve issues and developed excellent communication skills.
+          </p>
+          <p>I am passionate about the possibilities technology gives us to improve the world around us. I believe we
+            have the chance to better the world around us with the things we make. </p>
+          <p>Outside of programming, I am also an artist of traditional mediums, such as ink on paper. I bring that
+            creativity to everything I do, and I enjoy the opportunity programming provides to create.</p>
+        </div>
+      </div>
+
+    </section>
+
+    <div class="section-header" id="projects">
+      <h1 class="sectionheading">Projects</h1>
+      <div class="underline"></div>
+    </div>
+
+    <section class="projects">
+
+      <div class="cards">
+        <div class="card" id="card1">
+          <div class="img">
+            <a href='https://github.com/ksukkau/EpisodePicker'><img src="images/EpisodePicker.jpg" alt="Image of GUI for picking episodes" /></a></div>
+          <div id="content1">
+            <h2>Random Episode Picker</h2>
+            <p>I created this episode picker to select a random episode from multiple seasons of a tv show. In this
+              case, I selected the show Star Trek.<p>
+                <p>I wrote this app in Python. I used the Tkinter library to create a basic GUI and used random
+                  functionality to pick episodes. The episode can either be selected completely randomly with the random
+                  button or randomly from a specific series using the button corresponding to that series.</p>
+                <p>With over 800 episodes collecting the data efficiently was important so I used web scraping with
+                  Python. I created a CSV file for the program to read. During this, I ran into problems getting all the
+                  data in the same format, due to having to access multiple sites. It took a few iterations to get this
+                  correct.
+                  I also manually cleaned up some of the data. <a
+                    href='https://github.com/ksukkau/EpisodePicker'>Github</a></p>
+
+
+          </div>
+        </div>
+
+        <div class="card" id="card2">
+
+          <div id="content2">
+            <h2>CovidBites</h2>
+            <p>In a team of 3, over the first term we worked on developing a web app to allow people to find safe places
+              to dine out during the covid-19 pandemic. </p>
+            <p>We used Firestore and Firebase to create our user logins and save user and restaurant information. The
+              app allows users to search for restaurants and leave reviews. We planned to use crowdsourced information
+              to verify mask policies and headcounts in restaurants. We hope to add this in a future update. </p>
+            <p>Using JavaScript I built the user profile page which pulls the users' information (name, email) and
+              provides a personal greeting. I also created the check for user login and the logout functionality on the
+              profile page. </p>
+            <p>Throughout, I learned a lot about user-centred design and agile methodology. I also learned about working
+              and coding with a team.</p>
+            <p> The app is best viewed on mobile and can be seen at <a
+                href='https://comp1800-team26.web.app'>comp1800-team26.web.app</a> or on my <a
+                href="https://github.com/ksukkau/CovidBites">Github.</a> </p>
+
+          </div>
+          <div class="img"><a  href="https://github.com/ksukkau/CovidBites"><img src="images/covidbitesUser.jpg" alt="Image of web app CovidBites" /></a></div>
+        </div>
+
+      <div class="card" id="mobile">
+
+        
+        <div class="imgMobile"><a  href="https://github.com/ksukkau/CovidBites"><img src="images/covidbitesUser.jpg" alt="Image of web app CovidBites" /></a></div>
+      
+
+          <div id="content2mobile">
+            <h2>CovidBites</h2>
+            <p>In a team of 3, over the first term we worked on developing a web app to allow people to find safe places
+              to dine out during the covid-19 pandemic. </p>
+            <p>We used Firestore and Firebase to create our user logins and save user and restaurant information. The
+              app allows users to search for restaurants and leave reviews. We planned to use crowdsourced information
+              to verify mask policies and headcounts in restaurants. We hope to add this in a future update. </p>
+            <p>Using JavaScript I built the user profile page which pulls the users' information (name, email) and
+              provides a personal greeting. I also created the check for user login and the logout functionality on the
+              profile page. </p>
+            <p>Throughout, I learned a lot about user-centred design and agile methodology. I also learned about working
+              and coding with a team.</p>
+            <p> The app is best viewed on mobile and can be seen at <a
+                href='https://comp1800-team26.web.app'>comp1800-team26.web.app</a> or on my <a
+                href="https://github.com/ksukkau/CovidBites">Github.</a> </p>
+
+      </div>
+    </div>
+
+        <div class="card" id="card3">
+
+          <div class="img"><a href='game.html'><img src="images/TennisGame.jpg"
+                alt="Image of a game similar to pong" /></a>
+          </div>
+
+          <div id="content3">
+            <h2>Tennis Game</h2>
+            <p> I built this tennis game to become more familiar with JavaScript. Using canvass and JavaScript I was
+              able to make a one player game like pong. </p>
+            <p>The paddle follows the users mouse. The paddle is set to change the speed and angle of the ball depending
+              on where on the paddle it contacts. The game runs to 3 points at which point it declares a winner and is
+              paused until the user clicks the mouse. </p>
+            <p> Select the image to play </p>
+          </div>
+        </div>
+
+        <div class="card" id="card2">
+         <div id="content2">
+          <h2>Covax (mis)Info</h2>
+          <p>Worked in a team of 4 during NWHacks 2021 to create a React app which displays common covid 19 vaccine misinformation that is being spread on twitter.</p>
+          <p>I created the wordcloud data visualization of the most common words in the tweets using Python with Pandas, Matplotlib and wordcloud. </p>
+          <p>The biggest challenge in this project was getting Nodejs to run the Python scripts, using google and troubleshooting techniques we able to get this working using PythonShell. </p>
+          <p>Throughout, I learned a lot about troubleshooting when technologies are not working together, such as with Nodejs and Python.</p>
+          <p> <a href="https://github.com/ksukkau/nwHacks2021">Github.</a> </p>
+
+          </div>
+          <div class="img"><a  href="https://github.com/ksukkau/nwHacks2021"><img src="images/1.png" alt="Image of web app (mis) info" /></a></div>
+        </div>
+
+      <div class="card" id="mobile">
+
+        
+        <div class="imgMobile"> <a  href="https://github.com/ksukkau/nwHacks2021">  <img src="images/1.png" alt="Image of web app (mis)info" /> </a> </div>
+      
+
+          <div id="content2mobile">
+            <h2>Covax (mis)Info</h2>
+            <p>Worked in a team of 4 during NWHacks 2021 to create a React app which displays common covid 19 vaccine misinformation that is being spread on twitter.</p>
+            <p>I created the wordcloud data visualization of the most common words in the tweets using Python with Pandas, Matplotlib and wordcloud. </p>
+            <p>The biggest challenge in this project was getting Nodejs to run the Python scripts, using google and troubleshooting techniques we able to get this working using PythonShell. </p>
+            <p>Throughout, I learned a lot about troubleshooting when technologies are not working together, such as with Nodejs and Python.</p>
+            <p> <a href="https://github.com/ksukkau/nwHacks2021">Github.</a> </p>
+              
+      </div>
+    </div>
+      </div>
+    </section>
+
+    <div class="section-header" id="resume">
+      <h1 class="sectionheading">Resum&eacute;</h1>
+      <div class="underline"></div>
+    </div>
+
+    <div id="resumediv">
+      <div class="resumecontent">
+        <div id='pdfimg'><img src="images/ResumeThumb.jpg" alt="Thumbnail image of Resume" /></div>
+
+        <div id="highlights">
+          <h2>Resume Highlights</h2>
+          <h3>Education</h3>
+          <p>Computer Systems Technology, BCIT – Graduating Dec 2022</p>
+          <h3>Experience</h3>
+          <p>Student Software Developer, IOTO</p>
+          <p>Customer Service and Technical support, TELUS</p>
+
+          <div id="button"><a href="ResumeSukkauK.pdf" download="KatSukkauResume"><button>Download PDF</button></a></div>
+        </div>
+
+
+
+      </div>
+    </div>
+
+
+    <footer class="footer">
+      <div class="footercontent">
+        <p class="copyright">
+          Copyright &copy; 2020, K Sukkau - All Rights Reserved
+        </p>
+      </div>
+    </footer>
+
+    <a href="#header" class="scroll-btn">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+
+  </div>
+
+  <script src="portfolio.js"></script>
+</body>
+
+</html>
